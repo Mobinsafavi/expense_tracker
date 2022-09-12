@@ -1,13 +1,72 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: CustomFont1Name !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: CustomFont1Name !important;
+}
+
+/*------------------------------ Font Validation ---------------------------*/
+
+@font-face {
+  font-family: 'CustomFont1Name';
+  src: local('CustomFont1Name'),
+    url('./fonts/iran-sans-5/woff/IRANSansWeb.woff') format('woff'),
+    url('./fonts/iran-sans-5/woff2/IRANSansWeb.woff2') format('woff2');
+}
+
+
+
+/*------------------------------ Select input ---------------------------*/
+
+.select_field {
+  border: none;
+  background: #dde1e7;
+  box-shadow: inset 2px 2px 5px #babecc,
+    inset -5px -5px 10px #ffffff73;
+  border-radius: 3px;
+}
+
+.select_field:focus-visible{
+  outline: transparent !important;
+} 
+
+/*------------------------------ Font Colors ---------------------------*/
+
+.orange {
+  color: rgb(255, 89, 0);
+}
+
+
+/*------------------------------ Form Validation ---------------------------*/
+.form-validation.invalid input {
+  border-color: red;
+}
+
+.form-validation.invalid select {
+  border-color: red;
+}
+
+.form-validation.invalid .warning-box {
+  display: block !important;
+}
+
+
+/*------------------------------ Media Querys ---------------------------*/
+
+@media screen and (max-width: 576px) {
+  .font-1 {
+    font-size: 3vw !important;
+  }
+
+  .font-2 {
+    font-size: 3.5vw !important;
+  }
+
+  .font-3 {
+    font-size: 4vw !important;
+  }
 }
